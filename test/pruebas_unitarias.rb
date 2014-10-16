@@ -1,14 +1,14 @@
-require "./complejos.rb"
+require './complejos.rb'
 require 'test/unit'
 
 
 class Complejo_Test < Test::Unit::TestCase
-  ef setup
-    @c1 = Complejo.new(4,3)
-    @c2 = Complejo.new(1,1)
+  def setup
+    @c1 = Complejo_HYM.new(4,3)
+    @c2 = Complejo_HYM.new(1,1)
   end
   
-  def test_simple
+  def tests_basicos
   
     assert_equal("(4+3i)", @c1.to_s)		#Comprobamos que se muestre correctamente c1
     assert_equal("(1+1i)", @c1.to_s) 		#Comprobamos que se muestre correctamente c1
