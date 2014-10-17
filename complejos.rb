@@ -24,7 +24,15 @@ class Complejos_HYM
      end
 
      def *(other)
-       Complejos_HYM.new(@real*other.real-@img*other.img, @real*other.img+@img*other.real)
+       Complejos_HYM.new(@real *other.real - @img * other.img, @real * other.img + @img * other.real)
+     end
+
+     def /(other)
+        Complejos_HYM.new((@real * other.real + @img * other.img)/(other.real * other.real + other.img * other.img), (@img * other.real - @real * other.img) / (other.real * other.real + other.img * other.img))
+     end
+
+     def &(other)
+        Complejos_HYM.new(other * @real, other * @img)
      end
 
 end
