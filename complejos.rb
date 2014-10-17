@@ -23,4 +23,8 @@ class Complejos_HYM
        Complejos_HYM.new(@real - other.real, @img - other.img)
      end
 
+     def *(other)
+       Complejos_HYM.new(@real*other.real-@img*other.img, @real*other.img+@img*other.real)
+     end
+
 end
