@@ -8,7 +8,7 @@ class Complejo_Test < Test::Unit::TestCase
     @c2 = Complejo_HYM.new(1,1)
   end
   
-  def tests_basicos
+  def test_simple
   
     assert_equal("(4+3i)", @c1.to_s)		#Comprobamos que se muestre correctamente c1
     assert_equal("(1+1i)", @c1.to_s) 		#Comprobamos que se muestre correctamente c1
